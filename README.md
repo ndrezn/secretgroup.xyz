@@ -1,3 +1,3 @@
-# ndrezn.github.io
+# secretgroup.xyz
 
 The source for secretgroup.xyz
