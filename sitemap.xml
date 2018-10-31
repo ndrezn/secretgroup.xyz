@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://secretgroup.xyz/index.html</loc>
+    <lastmod>2017-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" media="only screen and (max-width: 370px)" href="https://secretgroup.xyz/phone/index.html"/>
+    <image:image>
+      <image:loc>https://secretgroup.xyz/images/secret-group.svg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://secretgroup.xyz/stickers.html</loc>
+    <lastmod>2017-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" media="only screen and (max-width: 370px)" href="https://secretgroup.xyz/phone/stickers.html"/>
+    <image:image>
+      <image:loc>https://secretgroup.xyz/images/secrets-secrets.svg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://secretgroup.xyz/about.html</loc>
+    <lastmod>2018-01-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" media="only screen and (max-width: 370px)" href="https://secretgroup.xyz/phone/about.html"/>
+    <image:image>
+      <image:loc>https://secretgroup.xyz/images/freedom.svg</image:loc>
+    </image:image>
+  </url>
+</urlset>

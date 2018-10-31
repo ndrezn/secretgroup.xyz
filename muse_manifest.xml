@@ -1,0 +1,105 @@
+<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="https://secretgroup.xyz" resolutions="1x" timestamp="1540947571497">
+  <folder name="css">
+    <file name="site_global.css" crc="444006867"/>
+    <file name="master_a-master.css" crc="3835984402" ref="stickers:index:about"/>
+    <file name="stickers.css" crc="4181340672" ref="stickers"/>
+    <file name="index.css" crc="388142216" ref="index"/>
+    <file name="about.css" crc="4184582064" ref="about"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="phone>index:phone>stickers:phone>about:index:stickers:about"/>
+    <file name="museutils.js" crc="340535759" ref="phone>index:phone>stickers:phone>about:index:stickers:about"/>
+    <file name="whatinput.js" crc="86476730" ref="phone>index:phone>stickers:phone>about:index:stickers:about"/>
+    <file name="museconfig.js" crc="310584261" ref="phone>index:phone>stickers:phone>about:index:stickers:about"/>
+    <file name="jquery.watch.js" crc="51536988" ref="phone>index:phone>stickers:phone>about:index:stickers:about"/>
+    <file name="require.js" crc="7928878" ref="phone>index:phone>stickers:phone>about:index:stickers:about"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="phone>about:about"/>
+    <file name="webpro.js" crc="4059564322" ref="phone>about:about"/>
+    <file name="form_check.php" crc="4020933626" ref="phone>about"/>
+    <file name="form_throttle.php" crc="4259590256" ref="phone>about"/>
+    <file name="form_process.php" crc="37464564" ref="phone>about"/>
+    <file name="form-u2964.php" crc="4213183019" ref="phone>about"/>
+    <file name="jquery.scrolleffects.js" crc="39568856" ref="index:stickers:about"/>
+    <file name="form-u1376.php" crc="4184464303" ref="about"/>
+  </folder>
+  <folder name="images">
+    <file name="secret-group-favicon.ico" crc="3829501089" ref="phone>index"/>
+    <file name="blank.gif" crc="4208392903" ref="phone>index:phone>about:index:about"/>
+    <file name="u3154-8.png" crc="147161737" ref="phone>index"/>
+    <file name="u3169.png" crc="336890570" ref="phone>index"/>
+    <file name="u3169-r.png" crc="126674262" ref="phone>index"/>
+    <file name="stickers-favicon.ico" crc="3829501089" ref="phone>stickers"/>
+    <file name="u3049-4.png" crc="3809713578" ref="phone>stickers"/>
+    <file name="about-favicon.ico" crc="3829501089" ref="phone>about"/>
+    <file name="u2795-5.png" crc="429033880" ref="phone>about"/>
+    <file name="u2823-4.png" crc="4060373017" ref="phone>about"/>
+    <file name="u2851-5.png" crc="123515117" ref="phone>about"/>
+    <file name="u2966.png" crc="234459184" ref="phone>about"/>
+    <file name="u2966-ferr.png" crc="4246800441" ref="phone>about"/>
+    <file name="u2976.png" crc="4277159958" ref="phone>about"/>
+    <file name="u2976-ferr.png" crc="419547839" ref="phone>about"/>
+    <file name="u2973.png" crc="4032773840" ref="phone>about"/>
+    <file name="u2973-ferr.png" crc="340346520" ref="phone>about"/>
+    <file name="u2980.png" crc="474805742" ref="phone>about"/>
+    <file name="u2980-ferr.png" crc="371453029" ref="phone>about"/>
+    <file name="checkboxunchecked.jpg" crc="495023700" ref="phone>about:about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="checkboxuncheckedrollover.jpg" crc="4076496830" ref="phone>about:about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="checkboxuncheckedmousedown.jpg" crc="361678653" ref="phone>about:about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="checkboxchecked.jpg" crc="477278992" ref="phone>about:about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="checkboxcheckedrollover.jpg" crc="435737969" ref="phone>about:about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="checkboxcheckedmousedown.jpg" crc="4004261994" ref="phone>about:about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="u1313-8.png" crc="3769544498" ref="index"/>
+    <file name="u1311.png" crc="336890570" ref="index"/>
+    <file name="u1311-r.png" crc="126674262" ref="index"/>
+    <file name="secret-group.svg" crc="4076010463" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="secret group_poster_.png" crc="532750653" ref="index"/>
+    <file name="u1347-4.png" crc="398467563" ref="stickers"/>
+    <file name="secrets-secrets.svg" crc="103843541" seo="true" ref="stickers">
+      <caption webpage="stickers" alt=""/>
+    </file>
+    <file name="secrets secrets_poster_.png" crc="63509348" ref="stickers"/>
+    <file name="u1400-5.png" crc="3815707038" ref="about"/>
+    <file name="u1397-4.png" crc="315385968" ref="about"/>
+    <file name="u1402-5.png" crc="290909041" ref="about"/>
+    <file name="u1383.png" crc="234459184" ref="about"/>
+    <file name="u1383-ferr.png" crc="4246800441" ref="about"/>
+    <file name="u1378.png" crc="4277159958" ref="about"/>
+    <file name="u1378-ferr.png" crc="419547839" ref="about"/>
+    <file name="u1387.png" crc="4032773840" ref="about"/>
+    <file name="u1387-ferr.png" crc="340346520" ref="about"/>
+    <file name="u1391.png" crc="474805742" ref="about"/>
+    <file name="u1391-ferr.png" crc="371453029" ref="about"/>
+    <file name="freedom.svg" crc="96244129" seo="true" ref="about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="freedom_poster_.png" crc="126535817" ref="about"/>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="master_a-master.css" crc="216251995" ref="phone>index:phone>stickers:phone>about"/>
+      <file name="index.css" crc="3950549675" ref="phone>index"/>
+      <file name="stickers.css" crc="526066290" ref="phone>stickers"/>
+      <file name="about.css" crc="258482901" ref="phone>about"/>
+    </folder>
+    <file name="index.html" crc="3789948140" seo="true" mt="1516809114618" redirect="true"/>
+    <file name="stickers.html" crc="4259280138" seo="true" mt="1516809098132" redirect="true"/>
+    <file name="about.html" crc="513402786" seo="true" mt="1516809368767" redirect="true"/>
+  </folder>
+  <file name="index.html" crc="3926267355" seo="true" mt="1509217865704" redirect="true"/>
+  <file name="stickers.html" crc="4291106669" seo="true" mt="1509217688353" redirect="true"/>
+  <file name="about.html" crc="258826285" seo="true" mt="1516808579051" redirect="true"/>
+</manifest>
