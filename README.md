@@ -1,3 +1,3 @@
 # secretgroup.xyz
 
-A side project to maintain [Secret Group](secretgroup.xyz). Currently under maintenance.
+A side project to maintain [Secret Group](https://secretgroup.xyz). Currently under maintenance.
