@@ -1,11 +1,15 @@
 
 <!DOCTYPE html>
-<link rel="shortcut icon" href="http://www.secretgroup.xyz/favicon.ico" type="image/icon"> <link rel="icon" href="http://www.secretgroup.xyz/favicon.ico" type="image/icon">
 <html>
-<body bgcolor="#f6d56b">
 
-	<title>secret group</title>
-	<html>
+<link rel="shortcut icon" href="http://www.secretgroup.xyz/favicon.ico" type="image/icon"> <link rel="icon" href="http://www.secretgroup.xyz/favicon.ico" type="image/icon">
+<title>secret group</title>
+
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+</head>
+
+<body bgcolor="#f6d56b">
 		<head>
 		    <style>
 		        * {
@@ -28,10 +32,74 @@
 		    </style>
 		</head>
 
+
+<div id='bokchoy'>
+	<img src ='images/small_bok.png' 
+	style='height:150px; 
+	width:150px; 
+	position:relative; 
+	border-radius: 5px; 
+	overflow:hidden'>
+</div>
+
+
+<script>
+var noOfDrops = 10;
+var fallingBoks = [];
+
+function makeBok(){
+	setInterval(bokFall, 36)
+	for (int i = 0; i < noOfDrops; i++){
+		var bok = new Object();
+        bok['image'] =  new Image();    
+        bok.image.src = 'images/small_bok.png';
+		bok.image.style.left = Math.random() * $(window).width() + 'px'; //place randomly along top
+		bok.image.style.top = 0 + 'px'; //place above border
+		bok["speed"] = 1 + Math.random() * 100;
+		fallingBoks.push(bok);
+	}
+}
+
+function bokFall(){
+
+	for (int i = 0; i < noOfDrops; i++){
+		var id = setInterval(frame, 10);
+		function frame(){
+			if(pos == $(window).height()){
+				clearInterval(id);
+			}
+			else {
+				pos++;
+				fallingDrops[i].image.style.top = pos+ 'px';
+			}
+
+		}	
+	}
+}
+
+
+// function myMove() {
+//   var elem = document.getElementById("bokchoy");  
+//   var pos = 0;
+//   var id = setInterval(frame, 10);
+//   function frame() {
+//     if (pos == $(window).height()) {
+//       clearInterval(id);
+//     } 
+//     else {
+//     	pos++; 
+//     	elem.style.top = pos + 'px'; 
+//     }
+//   }
+// }
+
+makeBok();
+
+</script>
+
 <div class="imgbox">
     <img class="center-fit" src='images/logo.png'>
 </div>
-</body>
-</html>
-</div>
+
+</head>
 </html>
