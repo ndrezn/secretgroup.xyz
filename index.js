@@ -20,7 +20,7 @@ function bounceBok() {
 	
 	if (leftPos > maxLeft || leftPos < 0) {
 		leftDir = -leftDir
-		leftSpeed = (Math.random() * 4) + 1
+		leftSpeed = (Math.random() * horSpeed) + 1
 		if (leftPos > maxLeft) {
 			leftPos = maxLeft
 		} else {
@@ -32,7 +32,7 @@ function bounceBok() {
 
 	if (topPos > maxTop || topPos < 0) {
 		topDir = -topDir
-		topSpeed = (Math.random() * 4) + 1
+		topSpeed = (Math.random() * verSpeed) + 1
 		if (topPos > maxTop) {
 			topPos = maxTop
 		} else {
