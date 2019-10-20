@@ -1,6 +1,13 @@
 #bokchoy { 
     display: inline-block; 
     position: absolute;
+    background-color: rgba(0,255,255,.5);   
+
+}
+.mycontainer{
+  position:relative;
+  width:50%;
+  margin:auto;
 }
 
 .imgbox {
