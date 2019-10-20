@@ -1,105 +1,47 @@
-
 <!DOCTYPE html>
 <html>
 
 <link rel="shortcut icon" href="http://www.secretgroup.xyz/favicon.ico" type="image/icon"> <link rel="icon" href="http://www.secretgroup.xyz/favicon.ico" type="image/icon">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <title>secret group</title>
 
+<div id = 'container'>
+		<img id = 'bokchoy' src ='images/small_bok.png' >
+</div>
+
 <head>
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+  <link rel = "stylesheet"
+   type = "text/css"
+   href = "style.css" />
 </head>
 
 <body bgcolor="#f6d56b">
-		<head>
-		    <style>
-		        * {
-		            position: absolute;
-				    margin: auto;
-				    top: 0;
-				    left: 0;
-				    right: 0;
-				    bottom: 0;
-		        }
-		        .imgbox {
-		            display: grid;
-		            height: 100%;
-		        }
-		        .center-fit {
-		            max-width: 100%;
-		            max-height: 100vh;
-		            margin: auto;
-		        }
-		    </style>
-		</head>
+	<head>
+	    <style>
+	        * {
+	            position: absolute;
+			    margin: auto;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    bottom: 0;
+	        }
+	        .imgbox {
+	            display: grid;
+	            height: 100%;
+	        }
+	        .center-fit {
+	            max-width: 80%;
+	            max-height: 100vh;
+	            margin: auto;
+	        }
+	    </style>
+	</head>
 
+	<div class="imgbox">
+    	<img class="center-fit" src='images/logo.png'>
+	</div>
 
-<div id='bokchoy'>
-	<img src ='images/small_bok.png' 
-	style='height:150px; 
-	width:150px; 
-	position:relative; 
-	border-radius: 5px; 
-	overflow:hidden'>
-</div>
-
-
-<script>
-var noOfDrops = 10;
-var fallingBoks = [];
-
-function makeBok(){
-	setInterval(bokFall, 36)
-	for (int i = 0; i < noOfDrops; i++){
-		var bok = new Object();
-        bok['image'] =  new Image();    
-        bok.image.src = 'images/small_bok.png';
-		bok.image.style.left = Math.random() * $(window).width() + 'px'; //place randomly along top
-		bok.image.style.top = 0 + 'px'; //place above border
-		bok["speed"] = 1 + Math.random() * 100;
-		fallingBoks.push(bok);
-	}
-}
-
-function bokFall(){
-
-	for (int i = 0; i < noOfDrops; i++){
-		var id = setInterval(frame, 10);
-		function frame(){
-			if(pos == $(window).height()){
-				clearInterval(id);
-			}
-			else {
-				pos++;
-				fallingDrops[i].image.style.top = pos+ 'px';
-			}
-
-		}	
-	}
-}
-
-
-// function myMove() {
-//   var elem = document.getElementById("bokchoy");  
-//   var pos = 0;
-//   var id = setInterval(frame, 10);
-//   function frame() {
-//     if (pos == $(window).height()) {
-//       clearInterval(id);
-//     } 
-//     else {
-//     	pos++; 
-//     	elem.style.top = pos + 'px'; 
-//     }
-//   }
-// }
-
-makeBok();
-
-</script>
-
-<div class="imgbox">
-    <img class="center-fit" src='images/logo.png'>
-</div>
-
-</head>
+	<script src='index.js'></script>
+</body>
 </html>
