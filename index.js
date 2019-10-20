@@ -1,26 +1,33 @@
-var $bok = $("#bokchoy");
-
 var horSpeed = $(window).width() * .002
 var verSpeed = $(window).height() * .002
+var i = 0;
 
-var leftSpeed = (Math.random() * horSpeed) + 1
-var topSpeed = (Math.random() * verSpeed) + 1
-var leftDir = 1
-var topDir = 1
+function initializeBok($bok) {
+	$bok.leftSpeed = (Math.random() * horSpeed) + 1
+	$bok.topSpeed = (Math.random() * verSpeed) + 1
+	$bok.leftDir = 1
+	$bok.topDir = 1
+	return $bok
+}
 
 
-function bounceBok() {
+function bounceBok($bok) {	
 	var maxLeft = $(window).width() - $bok.width();
 	var maxTop = $(window).height() - $bok.height();
 
 	var curTop = parseInt($bok.css('top'));
 	var curLeft = parseInt($bok.css('left'));
-
-	leftPos = curLeft + leftSpeed*leftDir
+	var colors = ['rgba(0,255,255,.5)', 'rgba(255,255,0,.5)', 'rgba(255,0,255,.5)']
+	
+	leftPos = curLeft + $bok.leftSpeed*$bok.leftDir
 	
 	if (leftPos > maxLeft || leftPos < 0) {
-		leftDir = -leftDir
-		leftSpeed = (Math.random() * horSpeed) + 1
+		
+		var curColor = colors[Math.floor(Math.random()*3)]
+		
+		$bok.css({ "background-color": curColor });
+		$bok.leftDir = -$bok.leftDir
+		$bok.leftSpeed = (Math.random() * horSpeed) + 1
 		if (leftPos > maxLeft) {
 			leftPos = maxLeft
 		} else {
@@ -28,22 +35,35 @@ function bounceBok() {
 		}
 	} 
 
-	topPos = curTop + topSpeed*topDir
+	topPos = curTop + $bok.topSpeed*$bok.topDir
 
 	if (topPos > maxTop || topPos < 0) {
-		topDir = -topDir
-		topSpeed = (Math.random() * verSpeed) + 1
+		
+		var curColor = colors[Math.floor(Math.random()*3) + 1]
+		
+		$bok.css({ "background-color": curColor });
+		$bok.topDir = -$bok.topDir
+		$bok.topSpeed = (Math.random() * verSpeed) + 1
 		if (topPos > maxTop) {
 			topPos = maxTop
 		} else {
 			topPos = 0
 		}
-	} 
-   
-
-	 
+	}
 	$bok.css({ left: leftPos, top: topPos });
 };
 
-bounceBok();
-setInterval(bounceBok, 1);
+function duplicateBok() {
+	var original = document.getElementById('bokchoy');
+	var clone = original.cloneNode(true); // "deep" clone
+	clone.id = "bokchoy" + ++i; // there can only be one element with an ID
+	original.parentNode.appendChild(clone);
+	
+	var name = "#" + clone.id
+	boks.push(initializeBok($(name)));
+	setInterval(function() {bounceBok(boks[i]);}, 1);
+}
+
+var boks = []
+boks.push(initializeBok($('#bokchoy')));
+setInterval(function() {bounceBok(boks[0]);}, 1);
