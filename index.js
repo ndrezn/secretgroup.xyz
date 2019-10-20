@@ -1,7 +1,10 @@
 var $bok = $("#bokchoy");
 
-var leftSpeed = (Math.random() * 4) + 1
-var topSpeed = (Math.random() * 4) + 1
+var horSpeed = $(window).width() * .002
+var verSpeed = $(window).height() * .002
+
+var leftSpeed = (Math.random() * horSpeed) + 1
+var topSpeed = (Math.random() * verSpeed) + 1
 var leftDir = 1
 var topDir = 1
 
@@ -21,7 +24,7 @@ function bounceBok() {
 		if (leftPos > maxLeft) {
 			leftPos = maxLeft
 		} else {
-			leftPos = minLeft
+			leftPos = 0
 		}
 	} 
 
@@ -33,7 +36,7 @@ function bounceBok() {
 		if (topPos > maxTop) {
 			topPos = maxTop
 		} else {
-			topPos = minTop
+			topPos = 0
 		}
 	} 
    
