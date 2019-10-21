@@ -17,7 +17,7 @@ function bounceBok($bok) {
 
 	var curTop = parseInt($bok.css('top'));
 	var curLeft = parseInt($bok.css('left'));
-	var colors = ['rgba(0,255,255,.5)', 'rgba(255,255,0,.5)', 'rgba(255,0,255,.5)']
+	var colors = ['#E8BF76', '#A082FF', '#CDFF8F']
 	
 	leftPos = curLeft + $bok.leftSpeed*$bok.leftDir
 	
