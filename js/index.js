@@ -12,8 +12,8 @@ function initializeBok($bok) {
 
 
 function bounceBok($bok) {	
-	var maxLeft = $(window).width() - $bok.width();
-	var maxTop = $(window).height() - $bok.height();
+	var maxLeft = $(window).width() - $bok.width()-10;
+	var maxTop = $(window).height() - $bok.height()-10;
 
 	var curTop = parseInt($bok.css('top'));
 	var curLeft = parseInt($bok.css('left'));
