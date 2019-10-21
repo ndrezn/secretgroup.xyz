@@ -37,3 +37,12 @@
     max-height: 100vh;
     margin: auto;
 }
+
+
+.bottom-fit {
+
+    position: fixed; 
+    background:gray; 
+    width:100%;
+    bottom:;
+}
