@@ -9,20 +9,14 @@ body {
   color: #A082FF;
 }
 
-input.email-input {
+input{
+  text-align: center;
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   font-size: 16px; font-style: normal; 
   font-variant: normal; 
   font-weight: 500; 
   line-height: 20px;
   width: 120%;
-}
-
-input{
-  text-align: center;
-  position: relative;
-  display: block;
-  margin : 0 auto;
 }
 
 .imgbox {
@@ -39,5 +33,6 @@ input{
     max-width: 90%;
     max-height: 100vh;
     margin: auto;
+
 }
 
