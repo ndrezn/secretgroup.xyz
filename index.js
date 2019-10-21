@@ -1,10 +1,10 @@
-var horSpeed = $(window).width() * .002
-var verSpeed = $(window).height() * .002
+var horSpeed = $(window).width() * .001
+var verSpeed = $(window).height() * .001
 var i = 0;
 
 function initializeBok($bok) {
-	$bok.leftSpeed = (Math.random() * horSpeed) + 1
-	$bok.topSpeed = (Math.random() * verSpeed) + 1
+	$bok.leftSpeed = Math.floor((Math.random() * horSpeed) + 1)
+	$bok.topSpeed = Math.floor((Math.random() * verSpeed) + 1)
 	$bok.leftDir = 1
 	$bok.topDir = 1
 	return $bok
@@ -27,7 +27,7 @@ function bounceBok($bok) {
 		
 		$bok.css({ "background-color": curColor });
 		$bok.leftDir = -$bok.leftDir
-		$bok.leftSpeed = (Math.random() * horSpeed) + 1
+		$bok.leftSpeed = Math.floor((Math.random() * horSpeed) + 1)
 		if (leftPos > maxLeft) {
 			leftPos = maxLeft
 		} else {
@@ -43,7 +43,7 @@ function bounceBok($bok) {
 		
 		$bok.css({ "background-color": curColor });
 		$bok.topDir = -$bok.topDir
-		$bok.topSpeed = (Math.random() * verSpeed) + 1
+		$bok.topSpeed = Math.floor((Math.random() * verSpeed) + 1)
 		if (topPos > maxTop) {
 			topPos = maxTop
 		} else {
@@ -66,4 +66,4 @@ function duplicateBok() {
 
 var boks = []
 boks.push(initializeBok($('#bokchoy')));
-setInterval(function() {bounceBok(boks[0]);}, 1);
+setInterval(function() {bounceBok(boks[0]);}, 4);
