@@ -10,17 +10,6 @@
   width: 200px;
   position:relative; 
 }    
-/*.container:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0,255,255, 0.5);
-  transition: all .3s linear;
-}*/
 
 .imgbox {
     display: grid;
@@ -46,13 +35,4 @@
   font-variant: normal; 
   font-weight: 500; 
   line-height: 20px;
-}
-
-
-.bottom-fit {
-
-    position: fixed; 
-    background:gray; 
-    width:100%;
-    bottom:;
 }
