@@ -33,9 +33,19 @@
     bottom: 0;
 }
 .center-fit {
-    max-width: 90%;
-    max-height: 100vh;
-    margin: auto;
+  max-width: 90%;
+  max-height: 100vh;
+  margin: auto;
+  text-align: center;
+}
+
+#memberbutton{
+  text-align: center;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-size: 12px; font-style: normal; 
+  font-variant: normal; 
+  font-weight: 500; 
+  line-height: 20px;
 }
 
 
