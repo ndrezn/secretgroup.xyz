@@ -1,9 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Futura', Sans-serif;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-size: 16px; font-style: normal; 
+  font-variant: normal; 
+  font-weight: 500; 
+  line-height: 20px;
   color: #87B352;
 }
+
+
 
 #leek { 
     display: inline-block; 

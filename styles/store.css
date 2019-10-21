@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-size: 16px; font-style: normal; 
+  font-variant: normal; 
+  font-weight: 500; 
+  line-height: 20px;
+  color: #A082FF;
+}
+
+input.email-input {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-size: 16px; font-style: normal; 
+  font-variant: normal; 
+  font-weight: 500; 
+  line-height: 20px;
+  width: 120%;
+}
+
+input{
+  text-align: center;
+  position: relative;
+  display: block;
+  margin : 0 auto;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.center-fit {
+    max-width: 90%;
+    max-height: 100vh;
+    margin: auto;
+}
+

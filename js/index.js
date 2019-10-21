@@ -1,5 +1,5 @@
-var horSpeed = $(window).width() * .001
-var verSpeed = $(window).height() * .001
+var horSpeed = $(window).width() * .1
+var verSpeed = $(window).height() * .1
 var i = 0;
 
 function initializeBok($bok) {
