@@ -6,28 +6,28 @@ body {
   font-variant: normal; 
   font-weight: 500; 
   line-height: 20px;
+}
+
+input{
+  text-align: center;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-size: 12px; font-style: normal; 
+  font-variant: normal; 
+  font-weight: 500; 
+  line-height: 20px;
+  width: 120%;
+}
+
+#nov22nd{
+  color: #6EB1CC;
+}
+
+#about{
   color: #87B352;
 }
 
-
-
-#leek { 
-    display: inline-block; 
-    position: absolute;
-    background-color: #76E8E1;   
-    height: 25%;
-    width: 25%;
-    top: 1px;
-    right: 1px;
-
-}
-
-
-.center-fit {
-    width: 10%;
-    max-width: 100%;
-    max-height: 100vh;
-    margin: auto;
+#remain{
+  color: #FFBDC9;
 }
 
 .imgbox {
@@ -39,4 +39,33 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+}
+.center-fit {
+    max-width: 90%;
+    max-height: 100vh;
+    margin: auto;
+
+}
+
+button.center-fit{
+  background:none;
+  border-radius: 6px; 
+  border: 2px 
+  solid #6EB1CC;
+  color: #6EB1CC;
+  cursor: pointer;
+
+}
+
+.body-link{
+  cursor: pointer;
+}
+
+#memberbutton{
+  text-align: center;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-size: 16px; font-style: normal; 
+  font-variant: normal; 
+  font-weight: 500; 
+  line-height: 20px;
 }

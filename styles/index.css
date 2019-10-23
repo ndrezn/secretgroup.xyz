@@ -28,10 +28,19 @@
   text-align: center;
 }
 
+button.center-fit{
+  background:#ffffff;
+  border-radius: 6px; 
+  border: 2px 
+  solid #ffffff;
+  color: #EA52F3;
+  cursor: pointer;
+}
+
 #memberbutton{
   text-align: center;
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  font-size: 12px; font-style: normal; 
+  font-size: 16px; font-style: normal; 
   font-variant: normal; 
   font-weight: 500; 
   line-height: 20px;

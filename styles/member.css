@@ -12,7 +12,7 @@ body {
 input{
   text-align: center;
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  font-size: 12px; font-style: normal; 
+  font-size: 15px; font-style: normal; 
   font-variant: normal; 
   font-weight: 500; 
   line-height: 20px;
@@ -36,3 +36,19 @@ input{
 
 }
 
+.click-text{
+  max-width: 90%;
+  max-height: 100vh;
+  margin: auto;
+  display: inline-block;
+  cursor: pointer;
+}
+
+input.center-fit{
+  background:none;
+  border-radius: 6px; 
+  border: 2px 
+  solid #A082FF;
+  color: #A082FF;
+
+}
