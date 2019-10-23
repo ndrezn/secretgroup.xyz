@@ -29,11 +29,11 @@
 }
 
 button.center-fit{
-  background:#ffffff;
+  background:none;
   border-radius: 6px; 
   border: 2px 
   solid #ffffff;
-  color: #EA52F3;
+  color: #ffffff;
   cursor: pointer;
 }
 
