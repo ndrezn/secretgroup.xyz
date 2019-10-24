@@ -44,7 +44,14 @@ input{
     max-width: 90%;
     max-height: 100vh;
     margin: auto;
+}
 
+.click-text{
+  max-width: 90%;
+  max-height: 100vh;
+  margin: auto;
+  display: inline-block;
+  cursor: pointer;
 }
 
 button.center-fit{
@@ -55,10 +62,6 @@ button.center-fit{
   color: #6EB1CC;
   cursor: pointer;
 
-}
-
-.body-link{
-  cursor: pointer;
 }
 
 #memberbutton{
