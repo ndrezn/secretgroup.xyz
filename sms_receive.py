@@ -1,20 +1,18 @@
-# https://www.twilio.com/blog/2016/09/how-to-receive-and-respond-to-a-text-message-with-python-flask-and-twilio.html
-
-from flask import Flask, request
-from twilio import twiml
-
+from flask import Flask, request, redirect
+from twilio.twiml.messaging_response import MessagingResponse
 
 app = Flask(__name__)
 
+@app.route("/sms", methods=['GET', 'POST'])
+def sms_reply():
+    """Respond to incoming calls with a simple text message."""
+    # Start our TwiML response
+    resp = MessagingResponse()
 
-@app.route('/sms', methods=['POST'])
-def sms():
-    number = request.form['From']
-    message_body = request.form['Body']
+    # Add a message
+    resp.message("Welcome to secretgroup. The address is 4238 de Bullion. 🤫🤫")
 
-    resp = twiml.Response()
-    resp.message('Hello {}, you said: {}'.format(number, message_body))
     return str(resp)
 
-if __name__ == '__main__':
-    app.run()
+if __name__ == "__main__":
+    app.run(debug=True)
