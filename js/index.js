@@ -1,3 +1,5 @@
+$("#test p").addClass("load");
+
 var horSpeed = $(window).width() * .001
 var verSpeed = $(window).height() * .001
 var i = 0;
