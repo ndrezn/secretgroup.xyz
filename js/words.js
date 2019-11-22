@@ -52,7 +52,7 @@ fg_colors = ['#573231', '#99566D', '#824F7A', '#8C5699', '#71508F']
 
 var counter = 0;
 var elem = document.getElementById("changeText");
-var inst = setInterval(change, 5000);
+var inst = setInterval(change, 90000);
 
 function change() {
 	document.body.style.background = bg_colors[Math.floor(Math.random() * bg_colors.length)];
@@ -61,6 +61,4 @@ function change() {
 }
 
 change()
-
-
 
