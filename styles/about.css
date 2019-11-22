@@ -57,6 +57,14 @@ input{
   cursor: pointer;
 }
 
+.changing-text{
+  max-width: 90%;
+  max-height: 100vh;
+  margin: auto;
+  font-size: 40px; font-style: normal; 
+  line-height: 90px; /* 4px +12px + 4px */
+}
+
 button.center-fit{
   background:none;
   border-radius: 6px; 
