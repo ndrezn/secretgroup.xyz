@@ -1,7 +1,7 @@
 $("#test p").addClass("load");
 
-var horSpeed = 5
-var verSpeed = 5
+var horSpeed = $(window).width() * .001
+var verSpeed = $(window).height() * .001
 var i = 0;
 
 function initializeBok($bok) {
@@ -19,7 +19,7 @@ function bounceBok($bok) {
 
 	var curTop = parseInt($bok.css('top'));
 	var curLeft = parseInt($bok.css('left'));
-	var colors = ['#E8BF76', '#A082FF', '#CDFF8F']
+	var colors = ['#99566D', '#824F7A', '#8C5699']
 	
 	leftPos = curLeft + $bok.leftSpeed*$bok.leftDir
 	
@@ -68,4 +68,4 @@ function duplicateBok() {
 
 var boks = []
 boks.push(initializeBok($('#bokchoy')));
-setInterval(function() {bounceBok(boks[0]);}, 100);
+setInterval(function() {bounceBok(boks[0]);}, 4);
