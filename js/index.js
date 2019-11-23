@@ -68,4 +68,4 @@ function duplicateBok() {
 
 var boks = []
 boks.push(initializeBok($('#bokchoy')));
-setInterval(function() {bounceBok(boks[0]);}, 12);
+setInterval(function() {bounceBok(boks[0]);}, 25);
