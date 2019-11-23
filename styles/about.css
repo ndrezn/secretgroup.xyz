@@ -23,7 +23,7 @@ input{
 }
 
 #credits{
-  color:#4953CC;
+  color:#71508F;
 }
 #about{
   color: #87B352;
@@ -83,8 +83,8 @@ button.center-fit2{
   background:none;
   border-radius: 6px; 
   border: 2px 
-  solid #4953CC;
-  color: #4953CC;
+  solid #71508F;
+  color: #71508F;
   cursor: pointer;
 
 }
