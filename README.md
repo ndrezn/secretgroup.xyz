@@ -1,3 +1,3 @@
 # secretgroup.xyz
 
-A side project to maintain [Secret Group](http://secretgroup.xyz). Currently under maintenance.
+A project to maintain [Secret Group](http://secretgroup.xyz), an art and design collective based in Montreal. For more information contact [www@secretgroup.xyz](www@secretgroup.xyz)
