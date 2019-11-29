@@ -50,7 +50,6 @@ var text = [
 bg_colors = ['#D67899', '#F78F8A', '#EC90DE', '#C478D6', '#C58AF7']
 fg_colors = ['#573231', '#99566D', '#824F7A', '#8C5699', '#71508F']
 
-var counter = 0;
 var elem = document.getElementById("changeText");
 var inst = setInterval(change, 90000);
 
